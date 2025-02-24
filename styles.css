@@ -1,0 +1,252 @@
+/* Make the navigation bar fixed */
+header nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #333;
+    padding: 0.25rem 0; /* Further reduce the padding to make the navbar thinner */
+}
+
+/* Add some top padding to the body to avoid content hiding under the fixed nav */
+body {
+    padding-top: 50px; /* Adjust this value based on your nav's height */
+    min-height: 100vh; /* Ensures the body takes at least the full height of the viewport */
+}
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+}
+
+header nav h1 {
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; /* Align navigation items to the right */
+}
+
+header nav ul li {
+    margin-left: 1.5rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff6347;
+}
+
+header #dark-mode-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.section {
+    padding: 3rem 2rem;
+    background-color: #fff;
+    margin: 1rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#hero {
+    text-align: center;
+    padding: 5rem 2rem;
+    background: url('your-background-image.jpg') no-repeat center center/cover;
+    color: #fff;
+}
+
+#hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: black;
+    }
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: black;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff6347;
+    color: #fff;
+    padding: 0.75rem 1.25rem;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #ff4500;
+}
+
+.project-card, .challenges-list, .certifications-list, .skills-list {
+    margin-bottom: 1.5rem;
+}
+
+.project-card h3, .challenges-list h3, .certifications-list h3, .skills-list li {
+    margin-bottom: 0.5rem;
+}
+
+/* Make project items horizontal */
+.project-filter {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.project-filter li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+.project-filter a {
+    background: #f7f7f7;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    color: #333;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.project-filter a:hover {
+    background: #ff6347;
+    color: #fff;
+}
+
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-list li {
+    background: #f7f7f7;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    margin: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skills-list li:hover {
+    background: #ff6347;
+    color: #fff;
+}
+
+#Contact {
+    text-align: center;
+}
+
+#Contact a {
+    color: #ff6347;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#Contact a:hover {
+    color: #ff4500;
+}
+
+/* Styles for About Me section */
+.about-me-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2rem;
+    background-color: #fff;
+    margin: 1rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-me-content {
+    display: flex;
+    align-items: center;
+}
+
+.about-me-image {
+    flex: 0 0 auto;
+    margin-right: 2rem;
+}
+
+.about-me-image img {
+    width: 150px; /* Adjust the size as needed */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about-me-description {
+    flex: 1;
+}
+
+/* Ensure responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .about-me-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .about-me-image {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .about-me-image img {
+        width: 120px; /* Adjust the size as needed */
+        height: 120px;
+    }
+}
+
+/* Styles for Project Filter navigation */
+.project-filter {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.project-filter li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+.project-filter a {
+    display: inline-block;
+    background: #f7f7f7;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    color: #333;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.project-filter a:hover {
+    background: #ff6347;
+    color: #fff;
+}
